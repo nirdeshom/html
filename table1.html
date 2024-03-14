@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag in HTML</title>
+    <style>
+        table{
+            text-align: center;
+            border: 5px solid red;
+        }
+        th{
+            background-color: rgb(111, 59, 160);
+        }
+
+        tr, td, th{
+            border: 2px solid black;
+            height: 40px;
+            width: 500px;
+            /* background-color: aqua; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- html table allow web developers to arrange data into rows and columns. we must write exerything inside the (table tag) -->
+
+    <h1>Table Tag</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>nirdesh</td>
+                <td>nir@gmail.com</td>
+                <td>OM@#11</td>
+            </tr>
+            <tr>
+                <td>satyam</td>
+                <td>atya@gmail.com</td>
+                <td>vi@#123</td>
+            </tr>
+            <tr>
+                <td>Omjeet</td>
+                <td>om@gmail.com</td>
+                <td>Nir@312</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total Data : 3</td>
+                <!-- <td>Omjeet@gmail.com</td>
+                <td>OMje3243</td> -->
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
