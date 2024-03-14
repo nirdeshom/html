@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrame in HTML</title>
+    <style>
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .iframe-container iframe {
+            /* Optionally set width and height */
+            width: 500px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>iFrame</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3D-nMYU3WsM?si=lx1qrJ-_SzZ1DtL0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <hr>
+    <div class="iframe-container">
+        <iframe id="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28247.540797375237!2d80.09151040887254!3d27.749916404260613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399f07e4f58e15cb%3A0x28285481c958f100!2sNagaria%2C%20Uttar%20Pradesh%20241407!5e0!3m2!1sen!2sin!4v1710414547739!5m2!1sen!2sin"
+            style="border: 1;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</body>
+
+</html>
