@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table in HTML</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        
+      }
+      
+      th,
+      td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        /* text-align: left; */
+        text-align: center;
+
+      }
+      
+      th {
+        background-color: #f2f2f2;
+      }
+      
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+</head>
+<body>
+    <h1>Time Table 12<sup>th</sup> Class</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">Time  Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="7">Hours</td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thr</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                
+                <!-- <th rowspan="7">Hours</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thr</th>
+                <th>Fri</th>
+                <th>Sat</th> -->
+               
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Eng.</td>
+                <td>Hindi</td>
+                <td>Dri.</td>
+                <td>Science</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td>Hindi</td>
+                <td>Eng.</td>
+                <td>Dri</td>
+                <td>History</td>
+                <td>Science</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td colspan="6">Lunch</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Eng.</td>
+                <td>Hindi</td>
+                <td>Dri.</td>
+                <td>Science</td>
+                <td rowspan="2">Game</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Eng.</td>
+                <td>Hindi</td>
+                <td>Dri.</td>
+                <td>Science</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
