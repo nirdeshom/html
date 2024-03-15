@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    form{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        width: 500px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+</style>
+</head>
+
+<body>
+    <!--The <form> tag is used to create an HTML form for user input.
+     The <input> HTML element is used to create interactive controls for web-based forms to accept data from the user. 
+     We must write inside the tag -->
+
+     <form action="index.php" method="post">
+        <h1>HTML Form</h1>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password">
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <strong>Select Gender</strong><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+        </div>
+        <div>
+            <label for="Massage">Massage:</label><br>
+            <textarea name="Massage" id="Massage" cols="30" rows="5" placeholder="Enter Massage"></textarea>
+        </div>
+        <div>
+            <strong>Select Course</strong><br>
+
+            <label for="checkbox">Java</label>
+            <input type="checkbox" name="checkbox" id="checkbox"><br>
+
+            <label for="checkbox">C++</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </div>
+        <div>
+            <select id="fruit" name="fruit">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+                <option value="strawberry">Strawberry</option>
+            </select>
+        </div>
+        <div>
+            <label for="file">Upload Photo:</label>
+            <input type="file" name="file" id="file"><br>
+        </div>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
