@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Form</title>
+</head>
+
+<body>
+    <h1>
+        Welcome To My Website <samp style="color: red;">Nirdesh Verma</samp>
+    </h1>
+    <form action="" method="post">
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" name="myname" id="name" placeholder="Enter Name" required size="50">
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email I'd:</label>
+            <input type="email" name="myemail" id="email" placeholder="Enter Email">
+        </div>
+        <br>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="mypassword" id="password" placeholder="Enter Password">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="number">Mobile No:</label>
+            <input type="number" name="mynumber" id="number" placeholder="Enter Mobile">
+        </div>
+        <br>
+
+        <div>
+            <label for="mygender">Gender:</label>
+            <input type="radio" name="gender" id="mygender" value="male">Male
+            <input type="radio" name="gender" id="mygender" value="femail">Femail
+        </div>
+        <br>
+
+        <div>
+            <label for="hobbies">Hobnies:</label>
+            <input type="checkbox" name="mycheck1" id="hobbies" value="Criket">Criket
+            <input type="checkbox" name="mycheck2" id="hobbies" value="Ludo">Ludo
+            <input type="checkbox" name="mycheck3" id="hobbies" value="Snape">Snape
+        </div>
+        <br>
+
+        <div>
+            <label for="photo">Upload Image:</label>
+            <input type="file" name="myphoto" id="photo">
+        </div>
+        <br>
+
+        <div>
+            <label for="birth">date Of Birth</label>
+            <input type="date" name="dob" id="birth">
+        </div>
+        <br>
+
+        <div>
+            <label for="fruits">Fruits</label>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orenge">Orange</option>
+                <option value="papaya">Papaya</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="dates">Date And Time</label>
+            <input type="datetime-local" name="datetime" id="dates">
+        </div>
+        <br>
+
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="mymessage" id="message" cols="30" rows="7"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="color">Choose Color</label>
+            <input type="color" name="mycolor" id="color">
+        </div>
+        <br>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        <br>
+
+
+        <div>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+
+</html>
